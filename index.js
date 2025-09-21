@@ -12,7 +12,7 @@ let currentMovie = null; // movie being shown
 fetch(baseURL)
   .then((res) => res.json())
   .then((movies) => {
-    showMovieList(movies); // put all movie names in the left column
+    showMovieList(movies); // put all movie names in the left column or row1
     showMovie(movies[0]); // automatically show the first movie
   });
 
